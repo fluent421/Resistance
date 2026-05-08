@@ -16,7 +16,7 @@ if choice == "Series":
          if num == 2:
               r1 = st.number_input("Enter the 1st resistance", min_value=0.0, value=None, placeholder="Enter resistance..", key="b1")
               r2 = st.number_input("Enter the 2nd resistance", min_value=0.0, value=None, placeholder="Enter resistance..", key="b2")
-              r3 = None
+              r3 = 0
               if st.button("Calculate"):
                   if r1 is None or r2 is None:
                       st.error("Please fill in the resistance parameters")
